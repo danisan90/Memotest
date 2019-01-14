@@ -1,1 +1,73 @@
-hello
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Memotest :)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Pattaya|Amatic+SC:700|Comfortaa:400,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="sass/style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <form class="login">
+        <p class="title">Memotest!</p>
+        <p class="description">Hola! Vamos a jugar al memotest.<br>Pero antes de empezar..<br />
+        Cual es tu nombre?
+        </p>
+        <input id="name" type="text" name="uname" placeholder="User name">
+        <p class="dif">¿Con que dificultad te gustaría jugar?</p>
+        <div class="buttons">
+          <button id="easy" onclick="startGame('facil')" type = "button">Facil</button>
+          <button id="medium" onclick="startGame('intermedio')" type = "button">Intermedio</button>
+          <button id="expert" onclick="startGame('dificil')" type = "button">Dificil</button>
+        </div>
+        <p id="message-error"></p>
+      </form>
+      
+    <div class="board">
+        <p class="title">Memotest!</p>
+        <p id="welcome"></p>
+        <p id="intentos"></p>
+        <p id="nivel"></p>
+        <p id="dificultad"></p>
+      <div class="containerImgs"></div> <!-- tablero adentro de tablero -->
+        <p id="tries"></p>
+    </div>
+
+    <div class="modal-loser">
+      <div class="modal-content">  
+      </div>
+    </div> 
+    <div class="modal-winner">
+      <div class="modal-contentWinner">  
+        <div id="containerTable">
+          <table id="tablePlayers">
+            <thead>
+              <th>
+                <td>Nombre</td>
+                <td>dificultad</td>
+                <td>puntaje</td>
+              </th>
+            </thead>
+            <tbody id="tablePlayersBody"></tbody>
+          </table>
+        </div>
+        
+      </div>
+
+    </div>
+
+    </div>
+    
+    <script src="index.js">
+
+      </script>
+  </body>
+</html>
